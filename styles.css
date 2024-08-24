@@ -4,12 +4,31 @@ body {
     color: #FFFFFF;
     margin: 0;
     padding: 0;
+    overflow: hidden; /* Evita rolagem */
+}
+
+#background-video {
+    position: absolute; /* Posiciona o vídeo atrás do conteúdo */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajusta o vídeo para cobrir toda a área */
+    z-index: -1; /* Coloca o vídeo atrás do conteúdo */
 }
 
 .playlist {
     display: flex;
     flex-direction: column;
     padding: 20px;
+    position: relative; /* Garante que a playlist fique sobre o vídeo */
+}
+
+h1 {
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+    font-size: 24px;
 }
 
 .music {
@@ -26,5 +45,5 @@ body {
 }
 
 .selected {
-    background-color: #333333;
+    background-color: #1DB954;
 }
