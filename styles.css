@@ -4,11 +4,11 @@ body {
     color: #FFFFFF;
     margin: 0;
     padding: 0;
-    overflow: hidden; /* Evita rolagem */
+    /* Removido overflow: hidden; para permitir a rolagem */
 }
 
 #background-video {
-    position: absolute; /* Posiciona o vídeo atrás do conteúdo */
+    position: fixed; /* Mudei para 'fixed' para que o vídeo permaneça em segundo plano mesmo ao rolar */
     top: 0;
     left: 0;
     width: 100%;
